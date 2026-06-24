@@ -1,0 +1,24 @@
+{
+  "name": "agentic-software-operations",
+  "description": "A platform for agentic software operations: the Atlassian Companion (deterministic Jira + Confluence substrate binding) composed with Product Ops 2.0 (the operating model). Pre-composed distribution — ships the resolved skill set (the Companion's production skills supersede Product Ops 2.0's two substrate reference skills) plus Product Ops 2.0's operating-model layer (reporting cadence, persistence/handoff, retrospective). Headed toward composed platform features: AutoSprint, AutoRetro, Delivery Dashboard, AutoPI Planning.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Fred Chong Rutherford",
+    "url": "https://github.com/fchongrutherford"
+  },
+  "license": "see LICENSE (skills/docs: CC-BY-4.0; code/plugin: FSL-1.1-MIT)",
+  "worksWith": [
+    {
+      "name": "atlassian-companion",
+      "optional": true,
+      "relationship": "Composed into this bundle. Standalone, it is the deterministic Jira/Confluence substrate binding.",
+      "contract": "https://github.com/fchongrutherford/pyongwa/blob/main/projects/atlassian-companion/INTEROP.md"
+    },
+    {
+      "name": "product-ops-2",
+      "optional": true,
+      "relationship": "Composed into this bundle. Standalone, it is the operating-model framework.",
+      "contract": "https://github.com/fchongrutherford/pyongwa/blob/main/projects/atlassian-companion/INTEROP.md"
+    }
+  ]
+}

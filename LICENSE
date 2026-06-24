@@ -1,0 +1,21 @@
+# Licensing — Agentic Software Operations
+
+This bundle is **split-licensed** — the same model as its two component products
+(Atlassian Companion and Product Ops 2.0) — so the open methods can be freely
+adopted while the author's commercialization path is preserved:
+
+- **Skills & documentation** (`**/SKILL.md`, `**/references/`, `spec/`, `*.md`) —
+  Creative Commons Attribution 4.0 International (**CC-BY-4.0**). Free to read,
+  cite, and implement, with attribution. See `LICENSE-SPEC`.
+
+- **Code & tooling** (`*.py`, `build.sh`, `.claude-plugin/`, the assembled plugin) —
+  Functional Source License 1.1 with an MIT future license (**FSL-1.1-MIT**). Free
+  to use, modify, and redistribute for any Permitted Purpose, but **not** to
+  repackage-and-resell as a competing product. Converts to the MIT License two
+  years after release. See `LICENSE-CODE`.
+
+The bundle composes content from both component products, each of which carries
+this same split license; the composition is licensed consistently.
+
+Authored by Fred Chong Rutherford. The **Agentic Software Operations** product line
+comprises this bundle plus Atlassian Companion and Product Ops 2.0.
