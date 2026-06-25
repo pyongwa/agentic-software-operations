@@ -12,13 +12,13 @@
       "name": "atlassian-companion",
       "optional": true,
       "relationship": "Composed into this bundle. Standalone, it is the deterministic Jira/Confluence substrate binding.",
-      "contract": "https://github.com/fchongrutherford/pyongwa/blob/main/projects/atlassian-companion/INTEROP.md"
+      "contract": "https://github.com/pyongwa/atlassian-companion/blob/main/INTEROP.md"
     },
     {
       "name": "product-ops-2",
       "optional": true,
       "relationship": "Composed into this bundle. Standalone, it is the operating-model framework.",
-      "contract": "https://github.com/fchongrutherford/pyongwa/blob/main/projects/atlassian-companion/INTEROP.md"
+      "contract": "https://github.com/pyongwa/atlassian-companion/blob/main/INTEROP.md"
     }
   ]
 }
