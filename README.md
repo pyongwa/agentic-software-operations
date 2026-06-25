@@ -59,7 +59,9 @@ skills path, with `AGENTS.md` carrying the session-start orientation). The two s
 
 Split-licensed, matching both component products — see [`LICENSE`](LICENSE):
 - **Skills & docs**: Creative Commons Attribution 4.0 (**CC-BY-4.0**).
-- **Code & plugin**: Functional Source License 1.1, MIT future (**FSL-1.1-MIT**).
+- **Code & plugin**: Apache License 2.0 (**Apache-2.0**) — use, modify, and redistribute freely, commercially or not. The project *name* is reserved (Apache-2.0 §6 + [`NOTICE`](NOTICE)).
+
+"Atlassian", "Jira", and "Confluence" are trademarks of Atlassian Pty Ltd. This is an independent project, not affiliated with or endorsed by Atlassian.
 
 ## Prior art & alternatives
 
