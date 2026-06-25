@@ -15,7 +15,7 @@ omitted in favor of versioned milestones.
 - Composition curation: the Companion's production skills supersede Product Ops 2.0's two substrate
   reference skills (`doc-minimums`, `tracker-operation`), which are curated out of the bundle; Product
   Ops 2.0's operating-model skills (`reporting-cadence`, `persistence-handoff`) and spec are included.
-- Split license (CC-BY-4.0 docs / FSL-1.1-MIT code), reconciled across both component products.
+- Split license (CC-BY-4.0 docs / Apache-2.0 code), reconciled across both component products; the project name is reserved (Apache-2.0 §6 + `NOTICE`).
 - `README.md` (platform model + the four platform features), `ROADMAP.md`, `PRIOR-ART.md`,
   plugin manifest with optional `worksWith` declarations.
 

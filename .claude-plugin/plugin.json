@@ -6,7 +6,7 @@
     "name": "Fred Chong Rutherford",
     "url": "https://github.com/fchongrutherford"
   },
-  "license": "see LICENSE (skills/docs: CC-BY-4.0; code/plugin: FSL-1.1-MIT)",
+  "license": "Apache-2.0 (code); CC-BY-4.0 (docs) — see LICENSE",
   "worksWith": [
     {
       "name": "atlassian-companion",

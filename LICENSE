@@ -1,21 +1,23 @@
 # Licensing — Agentic Software Operations
 
-This bundle is **split-licensed** — the same model as its two component products
-(Atlassian Companion and Product Ops 2.0) — so the open methods can be freely
-adopted while the author's commercialization path is preserved:
+Split-licensed:
 
-- **Skills & documentation** (`**/SKILL.md`, `**/references/`, `spec/`, `*.md`) —
-  Creative Commons Attribution 4.0 International (**CC-BY-4.0**). Free to read,
-  cite, and implement, with attribution. See `LICENSE-SPEC`.
+- **Code & tooling** (`*.py`, `build.sh`, `hooks/`, `.claude-plugin/`) — Apache License 2.0
+  (**Apache-2.0**). Use, modify, and redistribute freely, commercially or not.
+  See [`LICENSE-CODE`](LICENSE-CODE).
 
-- **Code & tooling** (`*.py`, `build.sh`, `.claude-plugin/`, the assembled plugin) —
-  Functional Source License 1.1 with an MIT future license (**FSL-1.1-MIT**). Free
-  to use, modify, and redistribute for any Permitted Purpose, but **not** to
-  repackage-and-resell as a competing product. Converts to the MIT License two
-  years after release. See `LICENSE-CODE`.
+- **Skills & documentation** (`**/SKILL.md`, `**/references/`, `*.md`) — Creative Commons
+  Attribution 4.0 International (**CC-BY-4.0**). See [`LICENSE-SPEC`](LICENSE-SPEC).
 
-The bundle composes content from both component products, each of which carries
-this same split license; the composition is licensed consistently.
+## The name
 
-Authored by Fred Chong Rutherford. The **Agentic Software Operations** product line
-comprises this bundle plus Atlassian Companion and Product Ops 2.0.
+Apache-2.0 grants no rights to the project name (its §6). "Agentic Software Operations" — the name and any
+associated identity — is **not** part of the license grant. Fork and build on the code
+freely, but please don't release a fork, product, or company *as* "Agentic Software Operations." Saying your
+tool is *based on* or *a fork of* Agentic Software Operations is fine. See [`NOTICE`](NOTICE).
+
+"Atlassian", "Jira", and "Confluence" are trademarks of Atlassian Pty Ltd. Agentic Software Operations is an
+independent project, not affiliated with or endorsed by Atlassian; those marks are used
+only to describe what the tool works with.
+
+Authored by Fred Chong Rutherford. Part of the **Agentic Software Operations** product line.
