@@ -9,7 +9,7 @@ omitted in favor of versioned milestones.
 ## [0.1.0] — initial bundle
 
 ### Added
-- The bundle distribution: a composition of the Atlassian Companion (deterministic Jira/Confluence
+- The bundle distribution: a composition of the Ops4Atlassian (deterministic Jira/Confluence
   substrate) and Product Ops 2.0 (operating model), assembled by `build.sh` from the canonical
   sources.
 - Composition curation: the Companion's production skills supersede Product Ops 2.0's two substrate

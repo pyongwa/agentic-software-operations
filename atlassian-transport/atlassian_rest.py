@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """REST adapter for the Atlassian-transport contract (EXEC-442).
 
-The Atlassian Companion skills speak to Jira/Confluence through a small
+The Ops4Atlassian skills speak to Jira/Confluence through a small
 transport CONTRACT (see transport-contract.md). The Rovo MCP is the default
 adapter; THIS is the REST adapter — so the pack runs with no MCP present, via
 an Atlassian API token. Stdlib-only (`urllib`); deterministic; no third-party deps.

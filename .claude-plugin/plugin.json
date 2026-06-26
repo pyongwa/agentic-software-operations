@@ -1,6 +1,6 @@
 {
   "name": "agentic-software-operations",
-  "description": "A platform for agentic software operations: the Atlassian Companion (deterministic Jira + Confluence substrate binding) composed with Product Ops 2.0 (the operating model). Pre-composed distribution — ships the resolved skill set (the Companion's production skills supersede Product Ops 2.0's two substrate reference skills) plus Product Ops 2.0's operating-model layer (reporting cadence — including retrospectives — and persistence/handoff). Headed toward composed platform features: AutoSprint, AutoRetro, Delivery Dashboard, AutoPI Planning.",
+  "description": "A platform for agentic software operations: the Ops4Atlassian (deterministic Jira + Confluence substrate binding) composed with Product Ops 2.0 (the operating model). Pre-composed distribution — ships the resolved skill set (the Companion's production skills supersede Product Ops 2.0's two substrate reference skills) plus Product Ops 2.0's operating-model layer (reporting cadence — including retrospectives — and persistence/handoff). Headed toward composed platform features: AutoSprint, AutoRetro, Delivery Dashboard, AutoPI Planning.",
   "version": "0.1.0",
   "author": {
     "name": "Fred Chong Rutherford",
@@ -9,16 +9,16 @@
   "license": "Apache-2.0 (code); CC-BY-4.0 (docs) — see LICENSE",
   "worksWith": [
     {
-      "name": "atlassian-companion",
+      "name": "ops4atlassian",
       "optional": true,
       "relationship": "Composed into this bundle. Standalone, it is the deterministic Jira/Confluence substrate binding.",
-      "contract": "https://github.com/pyongwa/atlassian-companion/blob/main/INTEROP.md"
+      "contract": "https://github.com/pyongwa/ops4atlassian/blob/main/INTEROP.md"
     },
     {
       "name": "product-ops-2",
       "optional": true,
       "relationship": "Composed into this bundle. Standalone, it is the operating-model framework.",
-      "contract": "https://github.com/pyongwa/atlassian-companion/blob/main/INTEROP.md"
+      "contract": "https://github.com/pyongwa/ops4atlassian/blob/main/INTEROP.md"
     }
   ]
 }
