@@ -15,6 +15,12 @@ How the skills are invoked across the work lifecycle. Source of truth is the
 Phases run in order: **session-start → project-start → execution-loop → work-close**,
 with **on-trigger** skills firing on demand throughout.
 
+## Session start — orient before any work
+
+| Skill | Cadence | Trigger |
+| --- | --- | --- |
+| `persistence-handoff` | once-per-session | load context at session start and write the handoff at session end |
+
 ## Project start — frame & structure a new initiative
 
 | Skill | Cadence | Trigger |
@@ -33,11 +39,15 @@ with **on-trigger** skills firing on demand throughout.
 | --- | --- | --- |
 | `jira-lifecycle` | loop-until-done | open -> progress -> PR -> close on any EXEC ticket, before starting and after finishing |
 
+## Work close — QA, simplify, and ship
+
+| Skill | Cadence | Trigger |
+| --- | --- | --- |
+| `reporting-cadence` | on-demand | weekly status report, retrospective rollup, or any one-off / executive status report |
+
 ## On trigger — fired on demand by keyword/event
 
 | Skill | Cadence | Trigger |
 | --- | --- | --- |
 | `jira-hierarchy-audit` | on-demand | audit a Jira Initiative/Epic hierarchy for outstanding / stale / duplicate / drift (read-only) |
-| `persistence-handoff` _(unclassified — defaulted)_ | on-demand | Use the tracker + knowledge base as extended memory across sessions. Maintain an anchor record, a current-state page, an |
-| `reporting-cadence` _(unclassified — defaulted)_ | on-demand | Generate one-off and weekly status reports and post them simultaneously to the tracker, the knowledge base, and the chat |
 

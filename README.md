@@ -5,7 +5,7 @@ Atlassian substrate to run a software practice in Jira + Confluence, composed in
 
 It is a **composition, not a fourth codebase.** Two products that also ship independently:
 
-- **[Ops4Atlassian](https://github.com/pyongwa/ops4atlassian)** — the *deterministic* Jira + Confluence substrate
+- **[Ops4Atlassian](../ops4atlassian)** — the *deterministic* Jira + Confluence substrate
   binding (no-LLM, idempotent ticket craft, decomposition, audit, doc types, orchestration).
 - **[Product Ops 2.0](https://github.com/pyongwa/product-ops-2)** — the operating-model *intelligence*
   (reporting cadence, persistence/handoff, retrospective, planning logic, and the moments that need
@@ -34,8 +34,8 @@ model + substrate that they will build on.
 
 ## What the bundle ships (the resolved skill set)
 
-The bundle ships the **already-resolved skill set** in `.claude/skills/` — **curated** so there are
-no duplicate or competing skills:
+`build.sh` assembles the bundle from the canonical sources and **curates the composed set** so there
+are no duplicate or competing skills:
 
 - **All** of the Ops4Atlassian's production skills + orchestration.
 - Product Ops 2.0's **operating-model** skills (`reporting-cadence`, `persistence-handoff`) and spec.
@@ -44,16 +44,17 @@ no duplicate or competing skills:
 
 > This curation is a property of the *pre-composed bundle*. It does **not** contradict the soft,
 > no-disabling interop contract that governs the two products as *standalone* installs — see the
-> Companion's [`INTEROP.md`](https://github.com/pyongwa/ops4atlassian/blob/main/INTEROP.md).
-> Standalone, each product keeps its full skill set; the bundle simply ships the resolved combination.
+> Companion's [`INTEROP.md`](../ops4atlassian/INTEROP.md). Standalone, each product keeps its
+> full skill set; the bundle simply ships the already-resolved combination.
 
-## Install
+## Build & install
 
-The composed skill set ships ready-to-use in `.claude/skills/`. Point your agent at this directory
-(Claude Code via the `.claude-plugin/plugin.json` manifest; Codex / Copilot / Gemini via the shared
-skills path, with `AGENTS.md` carrying the session-start orientation). The two source products
-([Ops4Atlassian](https://github.com/pyongwa/ops4atlassian),
-[Product Ops 2.0](https://github.com/pyongwa/product-ops-2)) are also installable on their own.
+```bash
+./build.sh                 # assembles the resolved skill set + orchestration + AGENTS.md
+# Product Ops 2.0 source defaults to ~/code/product-ops-2; override with PO2_DIR=/path ./build.sh
+```
+
+Assembled skills are build artifacts (git-ignored); the canonical sources are the two products.
 
 ## License
 
@@ -66,7 +67,7 @@ Split-licensed, matching both component products — see [`LICENSE`](LICENSE):
 ## Prior art & alternatives
 
 This platform is one honest option in an active space. See [`PRIOR-ART.md`](PRIOR-ART.md) and the
-Companion's [prior-art map](https://github.com/pyongwa/ops4atlassian/blob/main/PRIOR-ART.md) — including Anthropic's own official
+Companion's [prior-art map](../ops4atlassian/PRIOR-ART.md) — including Anthropic's own official
 Atlassian plugin and Claude Agent for Jira. Where a tool there fits your need better, use it.
 
 ## Provenance

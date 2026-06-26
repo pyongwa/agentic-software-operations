@@ -58,11 +58,29 @@ session context — so the orchestration is *acted on*, not just documented. The
 > The hook fires on the next session started in this repo (or after opening `/hooks` to
 > reload config) — SessionStart can't be proven mid-session.
 
+## Observability: the ambient audit (EXEC-456)
+
+The ambient "it just works" claim must be falsifiable, so the hooks append one
+best-effort JSONL record per event to `ASO_AUDIT_LOG` (default
+`~/.claude/aso/ambient-audit.jsonl` — under `~/.claude/` so it survives plugin reinstall):
+
+- **Slice 1 — `session_start_hook.py`** records every fire (`session_start` /
+  `injected`|`error`), so a hook that silently fails to fire becomes *detectable*.
+- **Slice 2 — `lifecycle_write_hook.py`** is a `PostToolUse` hook matched to the four
+  jira-lifecycle write verbs (transition / comment / edit / issue-link). It records one
+  `lifecycle_write` line per write (`op` + `issue` key + `session_id`), so "did this
+  session record its work?" is a query, not a guess. Reads that slip past the matcher are
+  logged as nothing; a write it cannot parse is logged as `error` (a real miss stays loud).
+
+Both append through `aso_audit.append` — one format, one fail-safe guarantee (never raises,
+never writes stdout). Both hooks are wired in each plugin's `hooks/hooks.json`.
+
 ## Tests
 
-`python3 meta/orchestration/test_gen_orchestration.py` — stdlib `unittest`, no deps:
-frontmatter parsing, default/classification, validation, deterministic + escaped YAML,
-and `--check` staleness detection.
+stdlib `unittest`, no deps — run each directly:
+`test_gen_orchestration.py` (frontmatter parse, classification, `--check` staleness),
+`test_session_start_hook.py` (Slice 1 audit), `test_lifecycle_write_hook.py` (Slice 2
+write-tagging), `test_aso_audit.py` (the shared appender).
 
 ## Scope & extension
 

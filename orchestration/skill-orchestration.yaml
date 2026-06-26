@@ -4,6 +4,11 @@ version: 1
 phases: [session-start, project-start, execution-loop, work-close, on-trigger]
 cadences: [once-per-session, once-per-project, loop-until-done, on-demand]
 skills:
+  - name: persistence-handoff
+    phase: session-start
+    cadence: once-per-session
+    trigger: "load context at session start and write the handoff at session end"
+    classified: true
   - name: confluence-docs
     phase: project-start
     cadence: on-demand
@@ -44,18 +49,13 @@ skills:
     cadence: loop-until-done
     trigger: "open -> progress -> PR -> close on any EXEC ticket, before starting and after finishing"
     classified: true
+  - name: reporting-cadence
+    phase: work-close
+    cadence: on-demand
+    trigger: "weekly status report, retrospective rollup, or any one-off / executive status report"
+    classified: true
   - name: jira-hierarchy-audit
     phase: on-trigger
     cadence: on-demand
     trigger: "audit a Jira Initiative/Epic hierarchy for outstanding / stale / duplicate / drift (read-only)"
     classified: true
-  - name: persistence-handoff
-    phase: on-trigger
-    cadence: on-demand
-    trigger: "Use the tracker + knowledge base as extended memory across sessions. Maintain an anchor record, a current-state page, an"
-    classified: false
-  - name: reporting-cadence
-    phase: on-trigger
-    cadence: on-demand
-    trigger: "Generate one-off and weekly status reports and post them simultaneously to the tracker, the knowledge base, and the chat"
-    classified: false

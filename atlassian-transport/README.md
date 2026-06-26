@@ -1,6 +1,6 @@
 # Atlassian transport (EXEC-442)
 
-Makes the **Atlassian Rovo MCP a soft default, not a hard requirement** for the Ops4Atlassian. The skills name *operations* (search / get / create / update / transition / page CRUD) and resolve them through a small **contract** with two interchangeable adapters:
+Makes the **Atlassian Rovo MCP a soft default, not a hard requirement** for Ops4Atlassian. The skills name *operations* (search / get / create / update / transition / page CRUD) and resolve them through a small **contract** with two interchangeable adapters:
 
 - **MCP adapter** (default) — the Rovo MCP tools; zero setup in an interactive Claude/Codex session.
 - **REST adapter** — [`atlassian_rest.py`](atlassian_rest.py), stdlib `urllib`, API-token auth; runs with **no MCP** (CI, cron, non-Claude runtimes), and is cleaner for bulk.
