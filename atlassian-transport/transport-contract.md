@@ -1,6 +1,6 @@
 # Atlassian transport contract
 
-The Atlassian Companion skills talk to Jira/Confluence through this small **contract**, not through hardcoded tool names. That makes the **Atlassian Rovo MCP a soft default, not a hard requirement** — the same skills run via the **REST API** (an API token) when no MCP is present.
+The Ops4Atlassian skills talk to Jira/Confluence through this small **contract**, not through hardcoded tool names. That makes the **Atlassian Rovo MCP a soft default, not a hard requirement** — the same skills run via the **REST API** (an API token) when no MCP is present.
 
 > **Rule for skill authors:** in a skill's operative steps, name the **operation** (e.g. "*update* the issue's assignee"), then point here. Do **not** bake a specific MCP tool name into the instruction as the only path.
 

@@ -9,16 +9,16 @@ of this roadmap is maintained alongside the project; this file mirrors it for th
 Three products that ship independently and compose:
 
 - **Product Ops 2.0** — the operating-model *intelligence*.
-- **Atlassian Companion** — the *deterministic* Jira + Confluence substrate binding.
+- **Ops4Atlassian** — the *deterministic* Jira + Confluence substrate binding.
 - **Agentic Software Operations** — the **platform**: each headline capability is a
-  **Platform feature = Product Ops 2.0 intelligence + Atlassian Companion substrate**.
+  **Platform feature = Product Ops 2.0 intelligence + Ops4Atlassian substrate**.
 
 ## Platform features (the forward roadmap)
 
 The split of work shows the boundary: the deterministic substrate work is the Companion's, the
 judgment/synthesis is Product Ops 2.0's.
 
-| Feature | What it does | Product Ops 2.0 part | Atlassian Companion part | Status |
+| Feature | What it does | Product Ops 2.0 part | Ops4Atlassian part | Status |
 | --- | --- | --- | --- | --- |
 | **AutoSprint** | Auto-generate & manage sprints from the backlog by velocity & priority. | Decide what to pull in, by velocity + prioritization. | Sprint-operation skill (seed/fill to capacity; dry-run→apply; idempotent). *May* need the Jira board/sprint API — to confirm. | `exploratory` |
 | **AutoRetro** | Slice a sprint, analyze comments, write a retro (went-well / needs-improvement / the *one* thing), then measure next sprint and repeat. | The analysis + the "one thing" synthesis; the measure-and-repeat loop. | Sprint-scoped reader (issues + comments + changelog) + a Confluence Retrospective doc type + the deterministic outcome-compare. | `exploratory` |
@@ -42,7 +42,7 @@ AC→tests bridge, reporting & cadence, persistence/RAG & handoff, retrospective
 skills + public spec + config schema + retro contract → split license + IP-hygiene gate → optional
 soft interop with the Companion.
 
-**Atlassian Companion** — Jira ticket-craft method → deterministic bundled-ticket decomposer +
+**Ops4Atlassian** — Jira ticket-craft method → deterministic bundled-ticket decomposer +
 read-only hierarchy audit → Confluence seven doc types + the Idea → PRD → [SDD] → Epic → Story chain
 → skill-lifecycle orchestration + session-start orientation → plugin packaging, cross-runtime → QA
 gate → transport seam (soft MCP) → OSS-readiness (IP-clean, evaluation, split license, prior-art doc,
@@ -57,7 +57,7 @@ substrate reference skills; Product Ops 2.0's operating-model layer wraps it) �
 - `planned` Product Ops 2.0 v0.1 provenance release published.
 - `planned` Product Ops 2.0 doc-minimums **audit-mode** (score a human doc vs the minimum).
 - `planned` Standalone **deterministic Jira-ops CLI** (extract the decomposer + audit).
-- `planned` Atlassian Companion public publish; CHANGELOG + status section.
+- `planned` Ops4Atlassian public publish; CHANGELOG + status section.
 - `planned` Bundle published to a public repository / marketplace.
 
 ## Cross-cutting principles

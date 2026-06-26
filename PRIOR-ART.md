@@ -9,7 +9,7 @@ judgment (retrospective synthesis, planning suggestions). Most of the landscape 
 LLM-driven throughout or a point GUI/SaaS product.
 
 ## Component-level prior art
-The Atlassian Companion's [`PRIOR-ART.md`](../atlassian-companion/PRIOR-ART.md) maps the Atlassian
+The Ops4Atlassian's [`PRIOR-ART.md`](../ops4atlassian/PRIOR-ART.md) maps the Atlassian
 agent-tooling landscape in detail — **start there**. It covers, among others:
 
 - **Anthropic's official [Atlassian plugin](https://claude.com/plugins/atlassian)** and hosted
