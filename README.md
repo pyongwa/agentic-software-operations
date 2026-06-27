@@ -72,9 +72,10 @@ Atlassian plugin and Claude Agent for Jira. Where a tool there fits your need be
 
 ## Provenance
 
-The methods are **Fred Chong Rutherford's own** — 20+ years with Jira/Atlassian and agile frameworks
-(Certified Scrum Product Owner, Certified ScrumMaster, SAFe), documented generically so they scale
-with a company.
+I'm **Fred Chong Rutherford**, and this bundle is how I actually work — the Atlassian substrate plus
+the operating model I run on top of it, composed into one install. It's 20+ years of agile delivery
+(Certified Scrum Product Owner, Certified ScrumMaster, SAFe), documented generically so it scales
+with you.
 
 ---
 
