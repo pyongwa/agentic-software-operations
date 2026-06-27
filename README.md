@@ -3,9 +3,9 @@
 A **platform for agentic software operations** — the operating model and the deterministic
 Atlassian substrate to run a software practice in Jira + Confluence, composed into one install.
 
-It is a **composition, not a fourth codebase.** Two products that also ship independently:
+It is a **composition, not a fourth codebase.** It composes two products that also ship independently:
 
-- **[Ops4Atlassian](../ops4atlassian)** — the *deterministic* Jira + Confluence substrate
+- **[Ops4Atlassian](https://github.com/pyongwa/ops4atlassian)** — the *deterministic* Jira + Confluence substrate
   binding (no-LLM, idempotent ticket craft, decomposition, audit, doc types, orchestration).
 - **[Product Ops 2.0](https://github.com/pyongwa/product-ops-2)** — the operating-model *intelligence*
   (reporting cadence, persistence/handoff, retrospective, planning logic, and the moments that need
@@ -40,11 +40,11 @@ are no duplicate or competing skills:
 - **All** of the Ops4Atlassian's production skills + orchestration.
 - Product Ops 2.0's **operating-model** skills (`reporting-cadence`, `persistence-handoff`) and spec.
 - Product Ops 2.0's two **substrate reference skills** (`doc-minimums`, `tracker-operation`) are
-  **curated out** — the Companion's production skills supersede them on the Atlassian substrate.
+  **curated out** — Ops4Atlassian's production skills supersede them on the Atlassian substrate.
 
 > This curation is a property of the *pre-composed bundle*. It does **not** contradict the soft,
-> no-disabling interop contract that governs the two products as *standalone* installs — see the
-> Companion's [`INTEROP.md`](../ops4atlassian/INTEROP.md). Standalone, each product keeps its
+> no-disabling interop contract that governs the two products as *standalone* installs — see
+> Ops4Atlassian's [`INTEROP.md`](https://github.com/pyongwa/ops4atlassian/blob/main/INTEROP.md). Standalone, each product keeps its
 > full skill set; the bundle simply ships the already-resolved combination.
 
 ## Build & install
@@ -66,8 +66,8 @@ Split-licensed, matching both component products — see [`LICENSE`](LICENSE):
 
 ## Prior art & alternatives
 
-This platform is one honest option in an active space. See [`PRIOR-ART.md`](PRIOR-ART.md) and the
-Companion's [prior-art map](../ops4atlassian/PRIOR-ART.md) — including Anthropic's own official
+This platform is one honest option in an active space. See [`PRIOR-ART.md`](PRIOR-ART.md) and
+Ops4Atlassian's [prior-art map](https://github.com/pyongwa/ops4atlassian/blob/main/PRIOR-ART.md) — including Anthropic's own official
 Atlassian plugin and Claude Agent for Jira. Where a tool there fits your need better, use it.
 
 ## Provenance
@@ -75,3 +75,12 @@ Atlassian plugin and Claude Agent for Jira. Where a tool there fits your need be
 The methods are **Fred Chong Rutherford's own** — 20+ years with Jira/Atlassian and agile frameworks
 (Certified Scrum Product Owner, Certified ScrumMaster, SAFe), documented generically so they scale
 with a company.
+
+---
+
+Part of **Agentic Software Operations** — an open-source line for running software operations through AI coding agents:
+
+- **[Ops4Jira](https://github.com/pyongwa/ops4jira)** — deterministic, no-LLM Jira CLI (decompose · audit · ref-gate)
+- **[Ops4Atlassian](https://github.com/pyongwa/ops4atlassian)** — Jira + Confluence substrate skills for AI agents
+- **[Product Ops 2.0](https://github.com/pyongwa/product-ops-2)** — the operating-model layer
+- **[Agentic Software Operations](https://github.com/pyongwa/agentic-software-operations)** — the two above, composed into one install

@@ -12,7 +12,7 @@ omitted in favor of versioned milestones.
 - The bundle distribution: a composition of the Ops4Atlassian (deterministic Jira/Confluence
   substrate) and Product Ops 2.0 (operating model), assembled by `build.sh` from the canonical
   sources.
-- Composition curation: the Companion's production skills supersede Product Ops 2.0's two substrate
+- Composition curation: Ops4Atlassian's production skills supersede Product Ops 2.0's two substrate
   reference skills (`doc-minimums`, `tracker-operation`), which are curated out of the bundle; Product
   Ops 2.0's operating-model skills (`reporting-cadence`, `persistence-handoff`) and spec are included.
 - Split license (CC-BY-4.0 docs / Apache-2.0 code), reconciled across both component products; the project name is reserved (Apache-2.0 §6 + `NOTICE`).
@@ -20,6 +20,6 @@ omitted in favor of versioned milestones.
   plugin manifest with optional `worksWith` declarations.
 
 ### Notes
-- Publish-**ready** in the monorepo; a separate public repository is a planned roadmap item.
+- Now **published** as a standalone public repository (https://github.com/pyongwa/agentic-software-operations); assembled by `build.sh` from the canonical sources.
 - The four platform features (AutoSprint, AutoRetro, Delivery Dashboard, AutoPI Planning) are on the
   roadmap as `exploratory` — not yet shipped.

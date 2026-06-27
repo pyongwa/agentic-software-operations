@@ -5,7 +5,7 @@ title: "Product Ops 2.0 — Normative Spec"
 description: "An open, vendor-neutral, LLM-agnostic operating-model framework for AI-operated product operations."
 status: Draft
 version: "1.0"
-spec_license: "CC-BY-4.0 (proposed; finalized at release)"
+spec_license: "CC-BY-4.0"
 author: "Fred Chong Rutherford"
 tags: [product-ops, agentic, operating-model, jira, confluence, rag, okf]
 # --- Typed-edge / provenance profile -------------------------------------
